@@ -16,3 +16,6 @@
 [submodule "bundle/neco-ghc"]
 	path = bundle/neco-ghc
 	url = git://github.com/ujihisa/neco-ghc.git
+[submodule "bundle/supertab"]
+	path = bundle/supertab
+	url = https://github.com/ervandew/supertab
