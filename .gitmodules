@@ -22,3 +22,9 @@
 [submodule "bundle/syntastic"]
 	path = bundle/syntastic
 	url = git://github.com/scrooloose/syntastic.git
+[submodule "bundle/tagbar"]
+	path = bundle/tagbar
+	url = git://github.com/majutsushi/tagbar
+[submodule "bundle/lushtags"]
+	path = bundle/lushtags
+	url = git://github.com/bitc/lushtags.git
