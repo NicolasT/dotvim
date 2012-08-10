@@ -79,3 +79,6 @@
 [submodule "bundle/pylint.vim"]
 	path = bundle/pylint.vim
 	url = git://github.com/vim-scripts/pylint.vim.git
+[submodule "bundle/vim-haskellConceal"]
+	path = bundle/vim-haskellConceal
+	url = git://github.com/Twinside/vim-haskellConceal.git
