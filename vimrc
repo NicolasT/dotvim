@@ -27,11 +27,6 @@ set foldmethod=indent
 set foldlevel=1
 set foldcolumn=1
 
-if has('gui')
-    autocmd VimEnter * nested TagbarOpen
-    copen 5
-endif
-
 let g:tagbar_width=28
 
 colorscheme two2tango
