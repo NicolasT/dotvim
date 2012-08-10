@@ -115,6 +115,10 @@ au Bufenter *.hs,*.lhs compiler ghc
 autocmd BufWritePost *.hs GhcModCheckAndLintAsync
 
 au FileType haskell let b:ghc_staticoptions = '-isrc'
+let g:ghcmod_ghc_options = ['-isrc']
+let g:ghcmod_use_basedir = getcwd()
+
+au FileType haskell nnoremap <leader>t :GhcModType<cr>
 
 " OCaml stuff
 let g:syntastic_ocaml_use_ocamlbuild = 1
