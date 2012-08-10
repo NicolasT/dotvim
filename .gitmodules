@@ -76,3 +76,6 @@
 [submodule "bundle/rest.vim"]
 	path = bundle/rest.vim
 	url = git://github.com/vim-scripts/rest.vim.git
+[submodule "bundle/pylint.vim"]
+	path = bundle/pylint.vim
+	url = git://github.com/vim-scripts/pylint.vim.git
