@@ -109,7 +109,7 @@ let g:haskell_conceal_wide = 1
 let g:neocomplcache_enable_at_startup = 1
 
 let g:haddock_browser="xdg-open"
-let g:haddock_indexfiledir="~/.vim/"
+let g:haddock_indexfiledir="/home/nicolas/.vim/"
 
 au Bufenter *.hs,*.lhs compiler ghc
 autocmd BufWritePost *.hs GhcModCheckAndLintAsync
