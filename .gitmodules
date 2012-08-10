@@ -31,3 +31,6 @@
 [submodule "bundle/haskellmode-vim"]
 	path = bundle/haskellmode-vim
 	url = git://github.com/lukerandall/haskellmode-vim.git
+[submodule "bundle/vim-colorschemes"]
+	path = bundle/vim-colorschemes
+	url = git://github.com/flazz/vim-colorschemes.git
