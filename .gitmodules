@@ -28,3 +28,6 @@
 [submodule "bundle/lushtags"]
 	path = bundle/lushtags
 	url = git://github.com/bitc/lushtags.git
+[submodule "bundle/haskellmode-vim"]
+	path = bundle/haskellmode-vim
+	url = git://github.com/lukerandall/haskellmode-vim.git
