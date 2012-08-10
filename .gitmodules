@@ -40,3 +40,6 @@
 [submodule "bundle/ctrlp.vim"]
 	path = bundle/ctrlp.vim
 	url = git://github.com/kien/ctrlp.vim.git
+[submodule "bundle/vim-haskellFold"]
+	path = bundle/vim-haskellFold
+	url = git://github.com/Twinside/vim-haskellFold.git
