@@ -91,3 +91,12 @@
 [submodule "bundle/vim-autoclose"]
 	path = bundle/vim-autoclose
 	url = git://github.com/Townk/vim-autoclose
+[submodule "bundle/vim-powerline"]
+	path = bundle/vim-powerline
+	url = git://github.com/Lokaltog/vim-powerline.git
+[submodule "bundle/hgrev"]
+	path = bundle/hgrev
+	url = git://github.com/vim-scripts/hgrev.git
+[submodule "bundle/vim-virtualenv"]
+	path = bundle/vim-virtualenv
+	url = git://github.com/jmcantrell/vim-virtualenv.git
