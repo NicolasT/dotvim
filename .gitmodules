@@ -82,3 +82,6 @@
 [submodule "bundle/vim-haskellConceal"]
 	path = bundle/vim-haskellConceal
 	url = git://github.com/Twinside/vim-haskellConceal.git
+[submodule "bundle/nerdcommenter"]
+	path = bundle/nerdcommenter
+	url = git://github.com/scrooloose/nerdcommenter.git
