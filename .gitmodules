@@ -88,3 +88,6 @@
 [submodule "bundle/a.vim"]
 	path = bundle/a.vim
 	url = git://github.com/vim-scripts/a.vim.git
+[submodule "bundle/vim-autoclose"]
+	path = bundle/vim-autoclose
+	url = git://github.com/Townk/vim-autoclose
