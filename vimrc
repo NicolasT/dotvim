@@ -111,3 +111,6 @@ au FileType haskell nnoremap <leader>t :GhcModType<cr>
 
 " OCaml stuff
 let g:syntastic_ocaml_use_ocamlbuild = 1
+
+" gitv settings
+let g:Gitv_OpenHorizontal = 1
