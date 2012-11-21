@@ -1,3 +1,4 @@
 haskellmode.config
 haddock_index.vim
 .netrwhist
+bundle/.cumino.buff
