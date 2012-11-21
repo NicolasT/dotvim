@@ -103,8 +103,8 @@ let g:haddock_indexfiledir="/home/nicolas/.vim/"
 au Bufenter *.hs,*.lhs compiler ghc
 autocmd BufWritePost *.hs GhcModCheckAndLintAsync
 
-au FileType haskell let b:ghc_staticoptions = '-isrc'
-let g:ghcmod_ghc_options = ['-isrc']
+au FileType haskell let b:ghc_staticoptions = '-isrc -ibin'
+let g:ghcmod_ghc_options = ['-isrc', '-ibin']
 let g:ghcmod_use_basedir = getcwd()
 
 au FileType haskell nnoremap <leader>t :GhcModType<cr>
