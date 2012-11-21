@@ -33,7 +33,7 @@ colorscheme two2tango
 
 set autoread
 set autowrite
-set nohlsearch
+"set nohlsearch
 set incsearch
 set showmatch
 set ignorecase
