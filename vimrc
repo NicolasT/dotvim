@@ -100,6 +100,8 @@ let g:neocomplcache_enable_at_startup = 1
 let g:haddock_browser="xdg-open"
 let g:haddock_indexfiledir="/home/nicolas/.vim/"
 
+let g:syntastic_haskell_checker="ghc-mod"
+
 au Bufenter *.hs,*.lhs compiler ghc
 autocmd BufWritePost *.hs GhcModCheckAndLintAsync
 
@@ -108,6 +110,9 @@ let g:ghcmod_ghc_options = ['-isrc', '-ibin']
 let g:ghcmod_use_basedir = getcwd()
 
 au FileType haskell nnoremap <leader>t :GhcModType<cr>
+au FileType haskell nnoremap <leader>T :GhcModTypeInsert<cr>
+
+let g:necoghc_enable_detailed_browse = 1
 
 " OCaml stuff
 let g:syntastic_ocaml_use_ocamlbuild = 1
