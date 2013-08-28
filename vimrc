@@ -117,5 +117,15 @@ let g:necoghc_enable_detailed_browse = 1
 " OCaml stuff
 let g:syntastic_ocaml_use_ocamlbuild = 1
 
+set rtp+=$HOME/.opam/4.00.1/share/ocamlmerlin/vim
+set rtp+=$HOME/.opam/4.00.1/share/ocamlmerlin/vimbufsync
+
+if !exists('g:neocomplcache_force_omni_patterns')
+  let g:neocomplcache_force_omni_patterns = {}
+endif
+let g:neocomplcache_force_omni_patterns.ocaml = '[^. *\t]\.\w*\|\h\w*|#'
+let g:syntastic_ocaml_checkers = ['merlin']
+
+
 " gitv settings
 let g:Gitv_OpenHorizontal = 1
