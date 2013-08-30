@@ -106,3 +106,6 @@
 [submodule "bundle/vim-gitgutter"]
 	path = bundle/vim-gitgutter
 	url = git://github.com/airblade/vim-gitgutter.git
+[submodule "bundle/GoldenView.Vim"]
+	path = bundle/GoldenView.Vim
+	url = git://github.com/zhaocai/GoldenView.Vim.git
