@@ -109,3 +109,6 @@
 [submodule "bundle/GoldenView.Vim"]
 	path = bundle/GoldenView.Vim
 	url = git://github.com/zhaocai/GoldenView.Vim.git
+[submodule "bundle/plantuml-syntax"]
+	path = bundle/plantuml-syntax
+	url = git://github.com/aklt/plantuml-syntax.git
