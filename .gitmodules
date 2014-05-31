@@ -10,3 +10,6 @@
 [submodule "bundle/flatlandia"]
 	path = bundle/flatlandia
 	url = https://github.com/jordwalke/flatlandia.git
+[submodule "bundle/syntastic"]
+	path = bundle/syntastic
+	url = https://github.com/scrooloose/syntastic.git
