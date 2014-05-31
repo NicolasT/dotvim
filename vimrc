@@ -1,16 +1,12 @@
-runtime bundle/pathogen/autoload/pathogen.vim
+" Set up vim-pathogen
+runtime bundle/vim-pathogen/autoload/pathogen.vim
+execute pathogen#infect()
+execute pathogen#helptags()
 
-filetype off
-call pathogen#infect()
-call pathogen#helptags()
+" Set colorscheme
+colorscheme flatlandia
 
-set nocompatible
-
-syntax on
-filetype on
-filetype plugin indent on
-
-set hidden
+" Basic settings
 set textwidth=80
 set autoindent
 set cindent
@@ -20,111 +16,58 @@ set noerrorbells
 set backup
 set ruler
 set showmode
-highlight ModeMsg guibg=blue guifg=green gui=NONE cterm=NONE term=NONE
 set wildignore=*.o,*.obj,*.class,*~,.bak,*.pyc,*.pyo,_build,dist,cabal-dev
 
 set foldmethod=indent
-set foldlevel=1
+set foldlevel=2
 set foldcolumn=1
-
-let g:tagbar_width=28
-
-colorscheme two2tango
 
 set autoread
 set autowrite
-"set nohlsearch
 set incsearch
 set showmatch
 set ignorecase
 
 set spell spelllang=en
 
-let g:detectindent_preferred_expandtab = 1
-let g:detectindent_preferred_indent = 8
-
 let &guicursor = &guicursor . ",a:blinkon0"
 
 set encoding=utf-8
 
-let g:SuperTabDefaultCompletionType = "context"
-set completeopt=menuone,longest,preview
-
-set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
-
-let g:indent_guides_start_level = 2
-let g:indent_guides_guide_size = 1
-let g:indent_guides_enable_on_vim_startup = 1
-
 nnoremap <m-Down> :cnext<cr>zvzz
 nnoremap <m-Up> :cprevious<cr>zvzz
 
-let g:ctrlp_map = '<c-t>'
+" Tagbar
+let g:tagbar_width=28
 
-" Remember last location in file, but not for commit messages.
-" Seems not to work though...
-au BufReadPost * if &filetype !~ '^git\c' && line("'\"") > 0 && line("'\"") <= line("$")
-    \| exe "normal! g`\"" | endif
+" Neocomplete
+let g:neocomplete#enable_at_startup = 1
+let g:neocomplete#enable_smart_case = 1
+inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
 
-" Python stuff
-autocmd BufRead,BufNewFile *.py,*.pyx syntax on
-autocmd BufRead,BufNewFile *.py,*.pyx set ai
-autocmd BufRead,BufNewFile *.py,*.pyx set tabstop=4 expandtab shiftwidth=4
-au BufRead,BufNewFile *.pyx set filetype=python
+" OCaml
+" Set up Merlin for OCaml support
+let s:ocamlmerlin=substitute(system('opam config var share'),'\n$','','''') .  "/ocamlmerlin"
+execute "set rtp+=".s:ocamlmerlin."/vim"
+execute "set rtp+=".s:ocamlmerlin."/vimbufsync"
+let g:syntastic_ocaml_checkers = ['merlin']
 
-highlight BadWhitespace ctermbg=red guibg=red
-" Display tabs at the beginning of a line in Python mode as bad.
-au BufRead,BufNewFile *.py,*.pyw match BadWhitespace /^\t\+/
-" Make trailing whitespace be flagged as bad.
-au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
+let g:syntastic_ocaml_use_ocamlbuild = 1
 
-let python_highlight_all=1
-let python_highlight_numbers=1
-let python_highlight_builtins=1
-let python_highlight_space_errors=1
-
+" Python
+au FileType python set tabstop=4 expandtab shiftwidth=4
+au FileType python set omnifunc=pythoncomplete#Complete
 let g:python_highlight_all=1
 
-autocmd FileType python compiler pylint
-let g:pylint_onwrite = 0
-
-au FileType python set omnifunc=pythoncomplete#Complete
-
-let g:pyflakes_use_quickfix = 0
-
-
-" haskell stuff
-let g:haskell_conceal_wide = 1
-let g:neocomplcache_enable_at_startup = 1
-
-let g:haddock_browser="xdg-open"
-let g:haddock_indexfiledir="/home/nicolas/.vim/"
-
-let g:syntastic_haskell_checker="ghc-mod"
-
-au Bufenter *.hs,*.lhs compiler ghc
-autocmd BufWritePost *.hs GhcModCheckAndLintAsync
-
-au FileType haskell let b:ghc_staticoptions = '-isrc -ibin'
-let g:ghcmod_ghc_options = ['-isrc', '-ibin']
-let g:ghcmod_use_basedir = getcwd()
-
+" Haskell
+au BufWritePost *.hs GhcModCheckAndLintAsync
 au FileType haskell nnoremap <leader>t :GhcModType<cr>
 au FileType haskell nnoremap <leader>T :GhcModTypeInsert<cr>
+au FileType haskell set omnifunc=necoghc#omnifunc
 
 let g:necoghc_enable_detailed_browse = 1
 
-" OCaml stuff
-let g:syntastic_ocaml_use_ocamlbuild = 1
+" Support 'codex'
+set tags=tags;/,codex.tags;/
 
-set rtp+=$HOME/.opam/4.01.0/share/ocamlmerlin/vim
-
-if !exists('g:neocomplcache_force_omni_patterns')
-  let g:neocomplcache_force_omni_patterns = {}
-endif
-let g:neocomplcache_force_omni_patterns.ocaml = '[^. *\t]\.\w*\|\h\w*|#'
-let g:syntastic_ocaml_checkers = ['merlin']
-au FileType ocaml call SuperTabSetDefaultCompletionType("<c-x><c-o>")
-
-" gitv settings
-let g:Gitv_OpenHorizontal = 1
+au FileType haskell nnoremap <silent> <leader>i :HoogleInfo<CR>

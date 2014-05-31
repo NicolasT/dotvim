@@ -1,120 +1,51 @@
-[submodule "bundle/pathogen"]
-	path = bundle/pathogen
-	url = git://github.com/tpope/vim-pathogen.git
-[submodule "bundle/vim2hs"]
-	path = bundle/vim2hs
-	url = git://github.com/dag/vim2hs.git
-[submodule "bundle/vimproc"]
-	path = bundle/vimproc
-	url = git://github.com/Shougo/vimproc.git
-[submodule "bundle/ghcmod-vim"]
-	path = bundle/ghcmod-vim
-	url = git://github.com/eagletmt/ghcmod-vim.git
-[submodule "bundle/neocomplcache"]
-	path = bundle/neocomplcache
-	url = git://github.com/Shougo/neocomplcache.git
-[submodule "bundle/neco-ghc"]
-	path = bundle/neco-ghc
-	url = git://github.com/ujihisa/neco-ghc.git
-[submodule "bundle/supertab"]
-	path = bundle/supertab
-	url = https://github.com/ervandew/supertab
+[submodule "bundle/vim-pathogen"]
+	path = bundle/vim-pathogen
+	url = https://github.com/tpope/vim-pathogen.git
+[submodule "bundle/vim-sensible"]
+	path = bundle/vim-sensible
+	url = https://github.com/tpope/vim-sensible.git
+[submodule "bundle/vim-airline"]
+	path = bundle/vim-airline
+	url = https://github.com/bling/vim-airline.git
+[submodule "bundle/flatlandia"]
+	path = bundle/flatlandia
+	url = https://github.com/jordwalke/flatlandia.git
 [submodule "bundle/syntastic"]
 	path = bundle/syntastic
-	url = git://github.com/scrooloose/syntastic.git
+	url = https://github.com/scrooloose/syntastic.git
 [submodule "bundle/tagbar"]
 	path = bundle/tagbar
-	url = git://github.com/majutsushi/tagbar
-[submodule "bundle/lushtags"]
-	path = bundle/lushtags
-	url = git://github.com/bitc/lushtags.git
-[submodule "bundle/haskellmode-vim"]
-	path = bundle/haskellmode-vim
-	url = git://github.com/lukerandall/haskellmode-vim.git
-[submodule "bundle/vim-colorschemes"]
-	path = bundle/vim-colorschemes
-	url = git://github.com/flazz/vim-colorschemes.git
-[submodule "bundle/vim-fugitive"]
-	path = bundle/vim-fugitive
-	url = git://github.com/tpope/vim-fugitive.git
-[submodule "bundle/ctrlp.vim"]
-	path = bundle/ctrlp.vim
-	url = git://github.com/kien/ctrlp.vim.git
-[submodule "bundle/vim-haskellFold"]
-	path = bundle/vim-haskellFold
-	url = git://github.com/Twinside/vim-haskellFold.git
-[submodule "bundle/ack.vim"]
-	path = bundle/ack.vim
-	url = git://github.com/mileszs/ack.vim.git
-[submodule "bundle/clang_complete"]
-	path = bundle/clang_complete
-	url = git://github.com/Rip-Rip/clang_complete.git
-[submodule "bundle/vim-easymotion"]
-	path = bundle/vim-easymotion
-	url = git://github.com/Lokaltog/vim-easymotion.git
-[submodule "bundle/gist-vim"]
-	path = bundle/gist-vim
-	url = git://github.com/mattn/gist-vim.git
-[submodule "bundle/gundo.vim"]
-	path = bundle/gundo.vim
-	url = git://github.com/sjl/gundo.vim.git
-[submodule "bundle/nerdtree"]
-	path = bundle/nerdtree
-	url = git://github.com/scrooloose/nerdtree.git
-[submodule "bundle/vim-indent-guides"]
-	path = bundle/vim-indent-guides
-	url = git://github.com/nathanaelkane/vim-indent-guides.git
-[submodule "bundle/pydoc.vim"]
-	path = bundle/pydoc.vim
-	url = git://github.com/fs111/pydoc.vim.git
-[submodule "bundle/vim-git"]
-	path = bundle/vim-git
-	url = git://github.com/tpope/vim-git.git
-[submodule "bundle/vim-css-color"]
-	path = bundle/vim-css-color
-	url = https://github.com/skammer/vim-css-color
-[submodule "bundle/rest.vim"]
-	path = bundle/rest.vim
-	url = git://github.com/vim-scripts/rest.vim.git
-[submodule "bundle/pylint.vim"]
-	path = bundle/pylint.vim
-	url = git://github.com/vim-scripts/pylint.vim.git
-[submodule "bundle/vim-haskellConceal"]
-	path = bundle/vim-haskellConceal
-	url = git://github.com/Twinside/vim-haskellConceal.git
-[submodule "bundle/nerdcommenter"]
-	path = bundle/nerdcommenter
-	url = git://github.com/scrooloose/nerdcommenter.git
-[submodule "bundle/a.vim"]
-	path = bundle/a.vim
-	url = git://github.com/vim-scripts/a.vim.git
-[submodule "bundle/vim-autoclose"]
-	path = bundle/vim-autoclose
-	url = git://github.com/Townk/vim-autoclose
-[submodule "bundle/hgrev"]
-	path = bundle/hgrev
-	url = git://github.com/vim-scripts/hgrev.git
-[submodule "bundle/vim-virtualenv"]
-	path = bundle/vim-virtualenv
-	url = git://github.com/jmcantrell/vim-virtualenv.git
-[submodule "bundle/gitv"]
-	path = bundle/gitv
-	url = git://github.com/gregsexton/gitv.git
-[submodule "bundle/vim-scala"]
-	path = bundle/vim-scala
-	url = git://github.com/mattdenner/vim-scala.git
+	url = https://github.com/majutsushi/tagbar.git
 [submodule "bundle/vim-gitgutter"]
 	path = bundle/vim-gitgutter
-	url = git://github.com/airblade/vim-gitgutter.git
-[submodule "bundle/GoldenView.Vim"]
-	path = bundle/GoldenView.Vim
-	url = git://github.com/zhaocai/GoldenView.Vim.git
-[submodule "bundle/plantuml-syntax"]
-	path = bundle/plantuml-syntax
-	url = git://github.com/aklt/plantuml-syntax.git
-[submodule "bundle/promela.vim"]
-	path = bundle/promela.vim
-	url = https://github.com/vim-scripts/promela.vim.git
-[submodule "bundle/idris-vim"]
-	path = bundle/idris-vim
-	url = git://github.com/idris-hackers/idris-vim.git
+	url = https://github.com/airblade/vim-gitgutter.git
+[submodule "bundle/ghcmod-vim"]
+	path = bundle/ghcmod-vim
+	url = https://github.com/eagletmt/ghcmod-vim.git
+[submodule "bundle/vimproc.vim"]
+	path = bundle/vimproc.vim
+	url = https://github.com/Shougo/vimproc.vim.git
+[submodule "bundle/vim2hs"]
+	path = bundle/vim2hs
+	url = https://github.com/dag/vim2hs.git
+[submodule "bundle/neocomplete.vim"]
+	path = bundle/neocomplete.vim
+	url = https://github.com/Shougo/neocomplete.vim.git
+[submodule "bundle/neco-ghc"]
+	path = bundle/neco-ghc
+	url = https://github.com/eagletmt/neco-ghc.git
+[submodule "bundle/vim-hoogle"]
+	path = bundle/vim-hoogle
+	url = https://github.com/Twinside/vim-hoogle.git
+[submodule "bundle/vim-trailing-whitespace"]
+	path = bundle/vim-trailing-whitespace
+	url = https://github.com/bronson/vim-trailing-whitespace.git
+[submodule "bundle/vim-ocaml-conceal"]
+	path = bundle/vim-ocaml-conceal
+	url = https://github.com/vim-scripts/vim-ocaml-conceal.git
+[submodule "bundle/vim-cute-python"]
+	path = bundle/vim-cute-python
+	url = https://github.com/ehamberg/vim-cute-python.git
+[submodule "bundle/ctrlp.vim"]
+	path = bundle/ctrlp.vim
+	url = https://github.com/kien/ctrlp.vim.git

@@ -1,10 +1,9 @@
 autocmd VimEnter * nested TagbarOpen
-copen 5
+copen 4
 
-set lines=50 columns=130 cmdheight=2
+set lines=50 columns=130
 
-set guifont=DejaVu\ Sans\ Mono\ 10.5
-let g:Powerline_symbols = 'unicode'
+set guifont=DejaVu\ Sans\ Mono\ 9.5
 
 set guioptions-=m
 set guioptions-=T
