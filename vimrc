@@ -86,3 +86,8 @@ au FileType haskell nnoremap <leader>T :GhcModTypeInsert<cr>
 au FileType haskell set omnifunc=necoghc#omnifunc
 
 let g:necoghc_enable_detailed_browse = 1
+
+" Support 'codex'
+set tags=tags;/,codex.tags;/
+
+au FileType haskell nnoremap <silent> <leader>i :HoogleInfo<CR>
