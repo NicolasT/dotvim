@@ -34,6 +34,9 @@ let &guicursor = &guicursor . ",a:blinkon0"
 
 set encoding=utf-8
 
+nnoremap <m-Down> :cnext<cr>zvzz
+nnoremap <m-Up> :cprevious<cr>zvzz
+
 " Tagbar
 let g:tagbar_width=28
 
