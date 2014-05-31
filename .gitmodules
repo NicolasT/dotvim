@@ -37,3 +37,6 @@
 [submodule "bundle/neco-ghc"]
 	path = bundle/neco-ghc
 	url = https://github.com/eagletmt/neco-ghc.git
+[submodule "bundle/vim-hoogle"]
+	path = bundle/vim-hoogle
+	url = https://github.com/Twinside/vim-hoogle.git
