@@ -28,3 +28,6 @@
 [submodule "bundle/vimproc.vim"]
 	path = bundle/vimproc.vim
 	url = https://github.com/Shougo/vimproc.vim.git
+[submodule "bundle/vim2hs"]
+	path = bundle/vim2hs
+	url = https://github.com/dag/vim2hs.git
