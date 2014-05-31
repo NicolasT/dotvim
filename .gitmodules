@@ -7,3 +7,6 @@
 [submodule "bundle/vim-airline"]
 	path = bundle/vim-airline
 	url = https://github.com/bling/vim-airline.git
+[submodule "bundle/flatlandia"]
+	path = bundle/flatlandia
+	url = https://github.com/jordwalke/flatlandia.git

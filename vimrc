@@ -2,3 +2,6 @@
 runtime bundle/vim-pathogen/autoload/pathogen.vim
 execute pathogen#infect()
 execute pathogen#helptags()
+
+" Set colorscheme
+colorscheme flatlandia
