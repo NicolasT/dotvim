@@ -112,3 +112,9 @@
 [submodule "bundle/plantuml-syntax"]
 	path = bundle/plantuml-syntax
 	url = git://github.com/aklt/plantuml-syntax.git
+[submodule "bundle/promela.vim"]
+	path = bundle/promela.vim
+	url = https://github.com/vim-scripts/promela.vim.git
+[submodule "bundle/idris-vim"]
+	path = bundle/idris-vim
+	url = git://github.com/idris-hackers/idris-vim.git
