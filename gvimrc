@@ -1,3 +1,4 @@
+autocmd VimEnter * nested TagbarOpen
 copen 4
 
 set lines=50 columns=130
