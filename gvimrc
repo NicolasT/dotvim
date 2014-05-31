@@ -3,7 +3,7 @@ copen 5
 
 set lines=50 columns=130 cmdheight=2
 
-set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 10
+set guifont=DejaVu\ Sans\ Mono\ 10.5
 let g:Powerline_symbols = 'unicode'
 
 set guioptions-=m
