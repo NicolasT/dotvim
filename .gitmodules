@@ -43,3 +43,9 @@
 [submodule "bundle/vim-trailing-whitespace"]
 	path = bundle/vim-trailing-whitespace
 	url = https://github.com/bronson/vim-trailing-whitespace.git
+[submodule "bundle/vim-ocaml-conceal"]
+	path = bundle/vim-ocaml-conceal
+	url = https://github.com/vim-scripts/vim-ocaml-conceal.git
+[submodule "bundle/vim-cute-python"]
+	path = bundle/vim-cute-python
+	url = https://github.com/ehamberg/vim-cute-python.git
