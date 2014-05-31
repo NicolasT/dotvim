@@ -60,6 +60,11 @@ function! s:unite_settings()
   nmap <buffer> <ESC> <Plug>(unite_exit)
 endfunction
 
+" Neocomplete
+let g:neocomplete#enable_at_startup = 1
+let g:neocomplete#enable_smart_case = 1
+inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
+
 " OCaml
 " Set up Merlin for OCaml support
 let s:ocamlmerlin=substitute(system('opam config var share'),'\n$','','''') .  "/ocamlmerlin"
@@ -78,3 +83,6 @@ let g:python_highlight_all=1
 au BufWritePost *.hs GhcModCheckAndLintAsync
 au FileType haskell nnoremap <leader>t :GhcModType<cr>
 au FileType haskell nnoremap <leader>T :GhcModTypeInsert<cr>
+au FileType haskell set omnifunc=necoghc#omnifunc
+
+let g:necoghc_enable_detailed_browse = 1
