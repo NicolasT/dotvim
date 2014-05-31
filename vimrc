@@ -40,29 +40,6 @@ nnoremap <m-Up> :cprevious<cr>zvzz
 " Tagbar
 let g:tagbar_width=28
 
-" Unite
-call unite#filters#matcher_default#use(['matcher_fuzzy'])
-nnoremap call unite#filters#sorter_default#use(['sorter_rank'])
-
-let g:unite_enable_start_insert = 1
-let g:unite_winheight = 10
-let g:unite_split_rule = 'botright'
-let g:unite_prompt = '» '
-
-nnoremap <C-P> :<C-u>Unite -start-insert buffer file_rec/async:!<cr>
-
-autocmd FileType unite call s:unite_settings()
-
-function! s:unite_settings()
-  let b:SuperTabDisabled=1
-  imap <buffer> <TAB>   <Plug>(unite_select_next_line)
-  imap <silent><buffer><expr> <C-x> unite#do_action('split')
-  imap <silent><buffer><expr> <C-v> unite#do_action('vsplit')
-  imap <silent><buffer><expr> <C-t> unite#do_action('tabopen')
-
-  nmap <buffer> <ESC> <Plug>(unite_exit)
-endfunction
-
 " Neocomplete
 let g:neocomplete#enable_at_startup = 1
 let g:neocomplete#enable_smart_case = 1
