@@ -50,3 +50,8 @@ let g:syntastic_ocaml_use_ocamlbuild = 1
 au FileType python set tabstop=4 expandtab shiftwidth=4
 au FileType python set omnifunc=pythoncomplete#Complete
 let g:python_highlight_all=1
+
+" Haskell
+au BufWritePost *.hs GhcModCheckAndLintAsync
+au FileType haskell nnoremap <leader>t :GhcModType<cr>
+au FileType haskell nnoremap <leader>T :GhcModTypeInsert<cr>
