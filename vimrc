@@ -71,3 +71,9 @@ let g:necoghc_enable_detailed_browse = 1
 set tags=tags;/,codex.tags;/
 
 au FileType haskell nnoremap <silent> <leader>i :HoogleInfo<CR>
+
+" EasyMotion setup
+map  / <Plug>(easymotion-sn)
+omap / <Plug>(easymotion-tn)
+map  n <Plug>(easymotion-next)
+map  N <Plug>(easymotion-prev)
