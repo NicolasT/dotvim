@@ -71,10 +71,10 @@ au FileType haskell set omnifunc=necoghc#omnifunc
 
 let g:necoghc_enable_detailed_browse = 1
 
+au FileType haskell nnoremap <silent> <leader>i :HoogleInfo<CR>
+
 " Support 'codex'
 set tags=tags;/,codex.tags;/
-
-au FileType haskell nnoremap <silent> <leader>i :HoogleInfo<CR>
 
 " EasyMotion setup
 map  / <Plug>(easymotion-sn)
