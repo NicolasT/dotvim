@@ -73,6 +73,8 @@ let g:necoghc_enable_detailed_browse = 1
 
 au FileType haskell nnoremap <silent> <leader>i :HoogleInfo<CR>
 
+let g:cumino_default_terminal = "gnome-terminal"
+
 " Support 'codex'
 set tags=tags;/,codex.tags;/
 
