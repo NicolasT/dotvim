@@ -37,6 +37,10 @@ set encoding=utf-8
 nnoremap <m-Down> :cnext<cr>zvzz
 nnoremap <m-Up> :cprevious<cr>zvzz
 
+" Git commit messages
+autocmd Filetype gitcommit setlocal spell textwidth=72
+au FileType gitcommit au! BufEnter COMMIT_EDITMSG call setpos('.', [0, 1, 1, 0])
+
 " Tagbar
 let g:tagbar_width=28
 
