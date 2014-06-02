@@ -61,3 +61,9 @@
 [submodule "bundle/riv.vim"]
 	path = bundle/riv.vim
 	url = https://github.com/Rykka/riv.vim.git
+[submodule "bundle/ultisnips"]
+	path = bundle/ultisnips
+	url = https://github.com/SirVer/ultisnips.git
+[submodule "bundle/vim-snippets"]
+	path = bundle/vim-snippets
+	url = https://github.com/honza/vim-snippets.git
