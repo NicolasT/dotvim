@@ -76,3 +76,6 @@
 [submodule "bundle/vim-extradite"]
 	path = bundle/vim-extradite
 	url = https://github.com/int3/vim-extradite.git
+[submodule "bundle/limelight.vim"]
+	path = bundle/limelight.vim
+	url = https://github.com/junegunn/limelight.vim.git

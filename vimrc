@@ -91,3 +91,14 @@ map  / <Plug>(easymotion-sn)
 omap / <Plug>(easymotion-tn)
 map  n <Plug>(easymotion-next)
 map  N <Plug>(easymotion-prev)
+
+" Goyo & LimeLight integration
+function! GoyoBefore()
+    Limelight
+endfunction
+
+function! GoyoAfter()
+    Limelight!
+endfunction
+
+let g:goyo_callbacks = [function('GoyoBefore'), function('GoyoAfter')]
